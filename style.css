@@ -14,19 +14,22 @@ body {
     display: flex;
     width: 480px;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
+    margin-bottom: 10px;
 }
 
 .painel .score {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
 
     font-weight: bold;
+    font-size: 20px;
 }
 
 .painel .score p {
     margin-right: 10px;
+    margin-bottom: 0;
 }
 
 .painel button {
@@ -43,4 +46,15 @@ body {
 .painel button:hover{
     cursor: pointer;
     opacity: 0.8;
+}
+
+.painel .speed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.painel .speed p {
+    margin-bottom: 4px;
 }

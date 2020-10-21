@@ -16,16 +16,19 @@
         <div class="score">
             <p>SCORE:</p><span id="score"></span>
         </div>
-        <!-- <div class="speed">
-            <input type="radio" name="1x" id="1x">
-            <label for="1x">1x</label>
+        <div class="speed">
+            <p>Speed:</p>
+            <form>
+                <input type="radio" name="speed" id="1x" value="1" checked >
+                <label for="1x">1x</label>
 
-            <input type="radio" name="2x" id="2x">
-            <label for="2x">2x</label>
+                <input type="radio" name="speed" id="2x" value="1.5">
+                <label for="2x">1.5x</label>
 
-            <input type="radio" name="3x" id="3x">
-            <label for="3x">3x</label>
-        </div> -->
+                <input type="radio" name="speed" id="3x" value="2">
+                <label for="3x">2x</label>
+            </form>
+        </div>
         <button onclick=restartGame()>Restart</button>
     </div>
     <canvas id="snake" width="512" height="512"></canvas>

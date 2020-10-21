@@ -1,6 +1,8 @@
 let score = document.getElementById('score');
 score.innerHTML = 0
 
+let speed = document.querySelector('input[name="speed"]:checked').value;
+
 let canvas  = document.getElementById('snake');
 let context = canvas.getContext('2d');
 let box = 32;
@@ -97,7 +99,9 @@ function restartGame(){
     food.x = Math.floor(Math.random() * 15 + 1) * box;
     food.y = Math.floor(Math.random() * 15 + 1) * box;
     
-    game = setInterval(startGame, 100);
+    speed = document.querySelector('input[name="speed"]:checked').value
+
+    game = setInterval(startGame, (160 / speed));
 }
 
-let game = setInterval(startGame, 100);
+let game = setInterval(startGame, 160);
